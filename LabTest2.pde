@@ -15,6 +15,7 @@ void draw()
   drawFlag(width/2, height/2, 100);
   drawFlag(50, 100, 200);
   drawFlag(400, 50, 100);
+  drawFlag(10, 400, 70);
   
 }
 
