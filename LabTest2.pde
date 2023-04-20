@@ -23,14 +23,20 @@ void drawFlag(float flagX, float flagY, float flagSize)
  
   noStroke();
  fill(25, 200, 255);
- rect (flagX, flagY, flagSize, flagSize - 30);
+ rect (flagX, flagY, flagSize, flagSize/2);
+  noStroke();
+   fill(0, 200, 255);
+   rect(flagX, flagY, flagSize, flagSize/2 - 40);
+   fill(30, 200, 255);
+   rect(flagX, flagY + 10, flagSize, flagSize/2 - 40);
+   fill(50, 200, 255);
+   rect(flagX, flagY + 30, flagSize, flagSize/2 - 40);
+   fill(200, 200, 255);
+   rect(flagX, flagY + 40, flagSize, flagSize/2 - 40);
  for (int flagL = 0; flagL < 10; flagL ++)
  {
    noFill();
    stroke(0);
    line(flagX + 50, flagY + 50, flagX + flagL, flagY + flagL);
  }
-   noStroke();
-   fill(0, 200, 255);
-   rect(flagX, flagY, flagSize, flagSize/2 - 30);
 }
